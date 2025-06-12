@@ -1,12 +1,30 @@
 /* global styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #ffffff;
 }
 
-ul {
+ul,
+ol {
   list-style: none;
+  margin: 0;
 }
 
 a {
@@ -14,11 +32,49 @@ a {
   font-style: normal;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  /* !!! вибрати з макету */
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
 /* header styles */
 header {
   line-height: 1.5;
   font-size: 16px;
   letter-spacing: 0.32px;
+
+  padding: 0 156px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  gap: 76px;
+  align-items: center;
+}
+
+.nav-links-container {
+  display: flex;
+  gap: 40px;
 }
 
 .site-logo {
@@ -47,10 +103,17 @@ header {
 
 header a {
   color: inherit;
+  padding: 24px 0;
 }
 
 .address {
   font-style: normal;
+}
+
+.address-links-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
 }
 
 .address-link:hover,
@@ -62,10 +125,19 @@ header a {
 .first-section {
   background-color: #2e2f42;
   color: white;
-  text-align: center;
+
+  padding: 0 156px;
+  height: 600px;
+  padding: 0 484px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
 }
 
 .first-section-title {
+  text-align: center;
   line-height: 1.07;
   font-size: 56px;
   font-weight: 700;
@@ -73,6 +145,9 @@ header a {
 }
 
 .order-service-button {
+  height: 56px;
+  width: 169px;
+  border-radius: 4px;
   cursor: pointer;
   background-color: #4d5ae5;
   border: none;
@@ -90,6 +165,19 @@ header a {
 }
 
 /* second section styles */
+.second-section {
+  padding: 120px 156px;
+}
+
+.content-container {
+  display: flex;
+  gap: 24px;
+}
+
+.content-item {
+  width: calc((100% - (3 * 24px)) / 4);
+}
+
 .second-section-title {
   line-height: 1.1;
   font-size: 36px;
@@ -106,6 +194,7 @@ header a {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-bottom: 8px;
 }
 
 .second-section-paragraph {
@@ -117,9 +206,12 @@ header a {
 /* third section styles */
 .third-section {
   background-color: #f4f4fd;
+  padding: 120px 156px;
 }
 
 .third-section-title {
+  padding-bottom: 72px;
+
   font-size: 36px;
   line-height: 1.11;
   font-weight: 700;
@@ -129,27 +221,45 @@ header a {
   color: #2e2f42;
 }
 
-.third-section-cads {
-  background-color: #ffffff;
+.third-section-cards-container {
+  display: flex;
+  gap: 24px;
 }
 
-.cards-title {
+.third-section-cards {
+  background-color: #ffffff;
+  width: calc((100% - (3 * 24)) / 4);
+  box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16),
+    0 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.third-section-cards-title {
   line-height: 1.2;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
-.cards-paragraph {
+.third-section-cards-paragraph {
   line-height: 1.5;
   font-size: 16px;
   letter-spacing: 0.02em;
   color: #434455;
+  text-align: center;
+  margin-bottom: 32px;
 }
 
 /* fourth section styles */
+.fourth-section {
+  padding: 120px 156px;
+}
+
 .fourth-section-title {
+  padding-bottom: 72px;
   line-height: 1.11;
   font-size: 36px;
   font-weight: 700;
@@ -159,12 +269,45 @@ header a {
   color: #2e2f42;
 }
 
+.fourth-section-cards-container {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.fourth-section-cads {
+  background-color: #ffffff;
+  border: 2px solid #e7e9fc;
+  width: calc((100% - (5 * 24)) / 6);
+}
+
+.fourth-section-cards-title {
+  line-height: 1.2;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-align: start;
+  margin: 32px 16px 8px;
+}
+
+.fourth-section-cards-paragraph {
+  line-height: 1.5;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #434455;
+  text-align: start;
+  margin-bottom: 32px;
+  margin-left: 16px;
+}
+
 /* footer styles */
 .footer {
   background-color: #2e2f42;
+  padding: 100px 156px;
 }
 
-footer .logo-part {
+.footer .logo-part {
   color: #f4f4fd;
 }
 
@@ -172,4 +315,8 @@ footer .logo-part {
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.32px;
+
+  margin-top: 16px;
+  display: block;
+  width: 264px;
 }
