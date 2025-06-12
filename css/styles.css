@@ -55,11 +55,14 @@ main {
 }
 
 /* header styles */
-header {
+.header {
   line-height: 1.5;
   font-size: 16px;
   letter-spacing: 0.32px;
+  border-bottom: 1px solid #e7e9fc;
+}
 
+.header-container {
   padding: 0 156px;
   display: flex;
   justify-content: space-between;
@@ -101,7 +104,7 @@ header {
   color: #404bbf;
 }
 
-header a {
+.header a {
   color: inherit;
   padding: 24px 0;
 }
