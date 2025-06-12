@@ -38,7 +38,7 @@ img {
   object-fit: cover;
 }
 
-.container {
+.root {
   /* !!! вибрати з макету */
   max-width: 100%;
   padding-left: 0;
@@ -63,10 +63,15 @@ main {
 }
 
 .header-container {
-  padding: 0 156px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.container {
+  width: 1158px;
+  padding: 0;
+  padding: 0 15px;
 }
 
 .header-navigation {
