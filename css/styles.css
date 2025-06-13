@@ -220,7 +220,7 @@ main {
 /* third section styles */
 .third-section {
   background-color: #f4f4fd;
-  padding: 120px 156px;
+  padding: 120px 0;
 }
 
 .third-section-title {
