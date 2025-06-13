@@ -182,7 +182,7 @@ main {
   padding: 120px 0;
 }
 
-.content-container {
+.second-section-content-container {
   display: flex;
   gap: 24px;
 }
@@ -198,18 +198,8 @@ main {
   border: 0;
 }
 
-.content-item {
+.second-section-content-item {
   flex-basis: calc((100% - 3 * 24px) / 4);
-}
-
-.second-section-title {
-  line-height: 1.1;
-  font-size: 36px;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  text-align: center;
-  text-transform: capitalize;
-  color: #2e2f42;
 }
 
 .second-section-paragraph-title {
