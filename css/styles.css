@@ -242,7 +242,8 @@ main {
 
 .third-section-cards {
   background-color: #ffffff;
-  width: calc((100% - 5 * 24) / 6);
+  width: calc((100% - 3 * 24) / 4);
+  border-radius: 0 0 4px 4px;
   box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16),
     0 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -254,8 +255,11 @@ main {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-align: center;
-  margin-top: 32px;
   margin-bottom: 8px;
+}
+
+.third-section-name-occupation {
+  padding: 32px 0;
 }
 
 .third-section-cards-paragraph {
@@ -264,7 +268,6 @@ main {
   letter-spacing: 0.02em;
   color: #434455;
   text-align: center;
-  margin-bottom: 32px;
 }
 
 /* fourth section styles */
