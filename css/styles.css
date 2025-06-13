@@ -240,8 +240,8 @@ main {
 }
 
 .third-section-cards {
-  background-color: #ffffff;
   width: calc((100% - 3 * 24px) / 4);
+  background-color: #ffffff;
   border-radius: 0 0 4px 4px;
   box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16),
     0 2px 1px rgba(46, 47, 66, 0.08);
@@ -324,7 +324,12 @@ main {
 /* footer styles */
 .footer {
   background-color: #2e2f42;
-  padding: 100px 156px;
+  padding: 100px 0;
+}
+
+.footer .site-logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer .logo-part {
@@ -336,7 +341,5 @@ main {
   line-height: 1.5;
   letter-spacing: 0.32px;
 
-  margin-top: 16px;
-  display: block;
-  width: 264px;
+  max-width: 264px;
 }
